@@ -1,4 +1,7 @@
-Parfumerie en Ligne Inspirée par Marionnaud
+#Parfumerie en Ligne Inspirée par Marionnaud
+
+
+
 Table des Matières
 Introduction
 Architecture Front-end
@@ -90,40 +93,78 @@ ID, produit, quantité vendue, date, client, prix total
 Clients
 
 ID, nom, adresse, contact
+
 Relations entre les Tables
+
 Ingrédients et Formules : une formule utilise plusieurs ingrédients
+
 Produits Finis et Formules : un produit fini est basé sur une formule
+
 Ventes et Produits Finis : plusieurs ventes peuvent contenir le même produit fini
+
 Ventes et Clients : plusieurs ventes peuvent être réalisées par le même client
+
+
 Sécurité Back-end
+
 Utiliser des bibliothèques et frameworks fiables pour éviter les vulnérabilités de sécurité connues
+
 Mettre à jour régulièrement les dépendances pour corriger les vulnérabilités de sécurité
+
 Utiliser HTTPS pour chiffrer les données transmises entre le serveur et le client (pas nécessaire pour le moment)
+
 Utiliser des tokens d'authentification sécurisés pour protéger les ressources sensibles
+
 Limiter le nombre de tentatives de connexion pour prévenir les attaques par force brute
+
 Mettre en place la vérification en deux étapes pour renforcer la sécurité des comptes utilisateur
+
 Utiliser des captchas pour prévenir les attaques par robot
+
 Utiliser des en-têtes de sécurité tels que Content Security Policy (CSP) et Strict-Transport-Security (HSTS)
+
 Utiliser des paramètres de requête préparés pour éviter les attaques par injection SQL (non nécessaire si PostgreSQL est utilisé)
+
 Utiliser des bibliothèques de validation de schéma pour valider les données d'entrée et de sortie
+
 Utiliser des bibliothèques de journalisation pour enregistrer les activités du serveur et détecter les anomalies
+
 Utiliser un pare-feu pour limiter l'accès au serveur et aux ressources sensibles
+
 Effectuer des tests de sécurité réguliers pour détecter les vulnérabilités et les failles de sécurité
+
 Sécurité Front-end
+
 Échapper toutes les entrées utilisateur pour éviter les attaques par injection de code malveillant
+
 Utiliser des bibliothèques et frameworks fiables pour éviter les vulnérabilités de sécurité connues
+
 Mettre à jour régulièrement les dépendances pour corriger les vulnérabilités de sécurité
+
 Utiliser HTTPS pour chiffrer les données transmises entre le serveur et le client (pas nécessaire pour le moment)
+
 Utiliser des tokens d'authentification sécurisés pour protéger les ressources sensibles
+
 Limiter le nombre de tentatives de connexion pour prévenir les attaques par force brute
+
 Mettre en place la vérification en deux étapes pour renforcer la sécurité des comptes utilisateur
+
 Utiliser des captchas pour prévenir les attaques par robot
+
 Utiliser des en-têtes de sécurité tels que Content Security Policy (CSP) et Strict-Transport-Security (HSTS)
+
 Effectuer des tests de sécurité réguliers pour détecter les vulnérabilités et les failles de sécurité
+
+
 NB : Utiliser bcrypt pour hacher les mots de passe
+
+
 Technologies Utilisées
+
 Front-end : HTML, CSS, JavaScript, frameworks front-end react
+
 Back-end : Node.js,, PostgreSQL
+
 Sécurité : bcrypt pour le hachage des mots de passe, JWT pour l'authentification, Helmet.js pour les en-têtes de sécurité
 
 
